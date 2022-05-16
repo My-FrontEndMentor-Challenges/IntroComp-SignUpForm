@@ -8,3 +8,100 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  min-height: 100vh;
+  background-image: url(assets/bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.container {
+  width: 85%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Main Text */
+.main-text {
+  text-align: center;
+}
+.main-text h1 {
+  font-size: 2rem;
+}
+.main-text p {
+  margin-top: 1rem;
+}
+
+/* Promo */
+.promo {
+  background-color: hsl(248, 32%, 49%);
+  display: grid;
+  place-items: center;
+  padding: 1rem 0;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  width: 100%;
+  text-align: center;
+  box-shadow: 00px 7px 2px rgba(0, 0, 0, 0.2);
+}
+.promo-text {
+  width: 50%;
+  line-height: 1.7;
+}
+.promo-text-bold {
+  font-weight: 600;
+}
+/* Form */
+.form {
+  margin-top: 1.5rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.input {
+  margin-top: 1rem;
+  width: 90%;
+  padding: 1rem 0 1rem 1rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+}
+.input::placeholder {
+  color: hsl(240, 0%, 46%);
+  font-weight: 600;
+}
+.form button {
+  margin-top: 1rem;
+  width: 90%;
+  padding: 1rem 0;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  cursor: pointer;
+}
+.disclaimer {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.7rem;
+  width: 75%;
+  text-align: center;
+  margin: 1rem 0;
+}
+.disclaimer-red {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
