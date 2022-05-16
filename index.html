@@ -29,10 +29,53 @@
         </div>
         <!-- Form -->
         <form class="form">
-          <input type="text" class="input" placeholder="First Name" />
-          <input type="text" class="input" placeholder="Last Name" />
-          <input type="text" class="input" placeholder="Email Address" />
-          <input type="text" class="input" placeholder="Password" />
+          <!-- First Name -->
+          <div class="input-container">
+            <input type="text" class="input" placeholder="First Name" id="1" />
+            <img
+              src="assets/icon-error.svg"
+              alt="exclamation point with red background"
+              class="error-icon error-1"
+            />
+            <div class="error-text error-1">First Name cannot be empty</div>
+          </div>
+          <!-- Last Name-->
+          <div class="input-container">
+            <input type="text" class="input" placeholder="Last Name" id="2" />
+            <img
+              src="assets/icon-error.svg"
+              alt="exclamation point with red background"
+              class="error-icon error-2"
+            />
+            <div class="error-text error-2">Last Name cannot be empty</div>
+          </div>
+          <!-- Email -->
+          <div class="input-container">
+            <input
+              type="text"
+              class="input"
+              placeholder="Email Address"
+              id="3"
+            />
+            <img
+              src="assets/icon-error.svg"
+              alt="exclamation point with red background"
+              class="error-icon error-3"
+            />
+            <div class="error-text error-3">
+              Looks like this is not an email
+            </div>
+          </div>
+          <!-- Password -->
+          <div class="input-container">
+            <input type="text" class="input" placeholder="Password" id="4" />
+            <img
+              src="assets/icon-error.svg"
+              alt="exclamation point with red background"
+              class="error-icon error-4"
+            />
+            <div class="error-text error-4">Password cannot be empty</div>
+          </div>
           <button type="submit">CLAIM YOUR FREE TRIAL</button>
           <p class="disclaimer">
             By clicking the button, you are agreeing to our

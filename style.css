@@ -67,18 +67,51 @@ body {
   align-items: center;
   border-radius: 10px;
   padding: 0.5rem;
+  box-shadow: 00px 7px 2px rgba(0, 0, 0, 0.2);
+}
+.input-container {
+  width: 90%;
+  margin-top: 1rem;
+  position: relative;
 }
 .input {
-  margin-top: 1rem;
-  width: 90%;
+  width: 100%;
   padding: 1rem 0 1rem 1rem;
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 5px;
+}
+.input:focus {
+  outline: 1px solid hsl(246, 25%, 77%);
 }
 .input::placeholder {
   color: hsl(240, 0%, 46%);
   font-weight: 600;
 }
+/* Input Errors */
+.error-text {
+  position: absolute;
+  color: hsl(0, 100%, 74%);
+  font-size: 0.6rem;
+  right: 5px;
+  bottom: -15px;
+  font-weight: 500;
+  font-style: italic;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.error-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.error-active {
+  border: 1px solid hsl(0, 100%, 74%);
+  opacity: 1;
+}
+/* Form Btn */
 .form button {
   margin-top: 1rem;
   width: 90%;
@@ -94,14 +127,54 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
+.form button:hover {
+  background-color: hsl(154, 79%, 58%);
+}
 .disclaimer {
   color: hsl(246, 25%, 77%);
   font-size: 0.7rem;
-  width: 75%;
+  width: 80%;
   text-align: center;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 .disclaimer-red {
   color: hsl(0, 100%, 74%);
   font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(assets/bg-intro-desktop.png);
+  }
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  .main-text {
+    text-align: left;
+    flex: 1;
+  }
+  .main-text h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+  .main-text p {
+    width: 90%;
+  }
+  .user-info {
+    flex: 1;
+  }
+  .promo-text {
+    width: 100%;
+  }
+  .form {
+    min-height: 500px;
+    justify-content: space-between;
+  }
+  .disclaimer {
+    position: relative;
+    top: -15px;
+  }
 }
