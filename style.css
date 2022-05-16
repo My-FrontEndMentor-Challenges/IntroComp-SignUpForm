@@ -169,18 +169,13 @@ body {
     flex: 1;
   }
   .promo {
-    max-width: 600px;
+    max-width: 500px;
   }
   .promo-text {
     width: 100%;
   }
   .form {
-    min-height: 500px;
-    max-width: 600px;
+    max-width: 500px;
     justify-content: space-between;
-  }
-  .disclaimer {
-    position: relative;
-    top: -15px;
   }
 }
