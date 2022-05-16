@@ -107,9 +107,11 @@ body {
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
 }
-.error-active {
-  border: 1px solid hsl(0, 100%, 74%);
+.active-error {
   opacity: 1;
+}
+.active-error-border {
+  border: 1px solid hsl(0, 100%, 74%);
 }
 /* Form Btn */
 .form button {
